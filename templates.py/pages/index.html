@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors Game</h1>
+    
+    <h3>Choose your weapon:</h3>
+    <!-- أزرار اختيار اللعبة بتبعت الاختيار لبايثون -->
+    <a href="?choice=Rock"><button>Rock (حجر)</button></a>
+    <a href="?choice=Paper"><button>Paper (ورقة)</button></a>
+    <a href="?choice=Scissors"><button>Scissors (مقص)</button></a>
+
+    <!-- القوسين دول {{ }} بتوع دجانجو لعرض البيانات المتغيرة -->
+    {% if result %}
+        <h2>Your Choice: {{ user }}</h2>
+        <h2>Computer's Choice: {{ comp }}</h2>
+        <hr>
+        <h1 style="color: blue;">Result: {{ result }}</h1>
+    {% endif %}
+</body>
+</html>
